@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const { connect } = require('./connection');
+const { connect } = require('./config/connection');
 const app = require('./app');
 
 const MONGO_URI = process.env.MONGO_URI;

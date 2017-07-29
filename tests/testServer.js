@@ -1,5 +1,5 @@
 require('dotenv').config();
-const { connect } = require('./../src/connection');
+const { connect } = require('./../src/config/connection');
 const app = require('./../src/app');
 
 let _app;

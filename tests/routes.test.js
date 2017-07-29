@@ -350,7 +350,7 @@ describe('/providers', () => {
         });
     });
 
-    it('should return providers with max_average_medicare_payments of 500', () => {
+    it('should return providers matching all the query params', () => {
       return fetch(`${baseURL}/providers?max_discharges=100&min_discharges=20&max_average_covered_charges=40000&min_average_covered_charges=20000&min_average_medicare_payments=4000&max_average_medicare_payments=10000&state=AL`)
         .then(data => data.json())
         .then(results => {
@@ -361,6 +361,7 @@ describe('/providers', () => {
             expect(result['Average Covered Charges']).toBeGreaterThanOrEqual(20000);
             expect(result['Average Medicare Payments']).toBeGreaterThanOrEqual(4000);
             expect(result['Average Medicare Payments']).toBeLessThanOrEqual(10000);
+            expect(result['Provider State']).toEqual('AL');
           });
           expect(results.length).toBe(1);
         });
