@@ -2,8 +2,11 @@
 
 ### GET /providers
 
-Example:
-https://bain-wenaukqcdz.now.sh/providers?max_discharges=100&min_discharges=20&max_average_covered_charges=40000&min_average_covered_charges=20000&min_average_medicare_payments=4000&max_average_medicare_payments=10000&state=AL
+Example Queries:
+https://bain-arubasuuaz.now.sh/providers?max_discharges=100&min_discharges=20&max_average_covered_charges=40000&min_average_covered_charges=20000&min_average_medicare_payments=4000&max_average_medicare_payments=10000&state=AL
+
+https://bain-arubasuuaz.now.sh/providers?min_discharges=25&max_discharges=25&state=GA
+
 
 Query Params:
 

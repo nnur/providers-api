@@ -18,5 +18,8 @@
     "joi": "^10.6.0",
     "mongodb": "^2.2.30",
     "nodemon": "^1.11.0"
+  },
+  "now": {
+    "alias": "bain-providers-api"
   }
 }
